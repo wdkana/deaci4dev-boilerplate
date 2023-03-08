@@ -20,7 +20,8 @@ class User extends BaseController
         $data['session'] = $session;
         $data['message'] = $session->getFlashdata('message');
 
-        return view('templates/header', $data) . view('form/login', $data) . view('templates/footer');
+        // return view('templates/header', $data) . view('form/login', $data) . view('templates/footer');
+        return view('form/login', $data);
     }
 
     public function logout()
@@ -39,7 +40,8 @@ class User extends BaseController
         $data['session'] = $session;
         $data['message'] = $session->getFlashdata('message');
 
-        return view('templates/header', $data) . view('form/register') . view('templates/footer');
+        // return view('templates/header', $data) . view('form/register') . view('templates/footer');
+        return view('form/register', $data);
     }
 
     public function login_auth()

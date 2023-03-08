@@ -1,3 +1,6 @@
+<?= $this->extend('templates/template.php') ?>
+
+<?= $this->section('content') ?>
 <div class="container mx-auto py-4">
     <h1 class="text-center">PLEASE LOGIN HERE</h1>
     <p class="text-center text-red-500">
@@ -31,3 +34,5 @@
         <a href="/register" class="ml-4 text-sm">or register here</a>
     </form>
 </div>
+
+<?= $this->endSection() ?>

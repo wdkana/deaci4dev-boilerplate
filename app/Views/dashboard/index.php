@@ -1,3 +1,7 @@
+<?= $this->extend('templates/template.php') ?>
+
+<?= $this->section('content') ?>
+
 <h1>DASHBOARD</h1>
 <p>
     <?php
@@ -16,3 +20,5 @@
 <h3>islogin:
     <?= $isLogin ?>
 </h3>
+
+<?= $this->endSection() ?>
