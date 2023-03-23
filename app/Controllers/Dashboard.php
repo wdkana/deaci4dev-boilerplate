@@ -20,6 +20,7 @@ class Dashboard extends BaseController
             return redirect()->to('/login');
         }
 
-        return view('templates/header', $data) . view('dashboard/index', $data) . view('templates/footer');
+        // return view('templates/header', $data) . view('dashboard/index', $data) . view('templates/footer');
+        return view('dashboard/index', $data);
     }
 }

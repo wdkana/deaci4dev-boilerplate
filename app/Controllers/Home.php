@@ -10,12 +10,15 @@ class Home extends BaseController
         $data['title'] = $this->title . "HOME";
         $data['session'] = \Config\Services::session();
 
-        return view('templates/header', $data) . view('home') . view('templates/footer');
+        // return view('templates/header', $data) . view('home') . view('templates/footer');
+        echo view('home', $data);
+
     }
     public function about()
     {
         $data['session'] = \Config\Services::session();
         $data['title'] = $this->title . "ABOUT";
-        return view('templates/header', $data) . view('about') . view('templates/footer');
+        // return view('templates/header', $data) . view('about') . view('templates/footer');
+        return view('about', $data);
     }
 }

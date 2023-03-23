@@ -1,3 +1,7 @@
+<?= $this->extend('templates/template.php') ?>
+
+<?= $this->section('content') ?>
+
 <div class="container mx-auto py-4">
     <h1>REGISTER PAGE</h1>
     <form class="mt-4" action="/register/auth" method="post">
@@ -24,3 +28,5 @@
         <a href="/login" class="ml-4 text-sm">or login here</a>
     </form>
 </div>
+
+<?= $this->endSection() ?>

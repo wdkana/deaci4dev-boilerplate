@@ -1,3 +1,6 @@
+<?= $this->extend('templates/template.php') ?>
+
+<?= $this->section('content') ?>
 <div class="container mx-auto">
     <h1>HOMEPAGE</h1>
     <p>
@@ -8,3 +11,5 @@
         ?>
     </p>
 </div>
+
+<?= $this->endSection() ?>
